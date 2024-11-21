@@ -1,0 +1,46 @@
+<!--External CSS-->
+        table {
+            border: 3px solid black;
+            width: 400px;
+            height:480px;
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+        }
+
+        td {
+            border: 2px solid black;
+            text-align: center;
+            width: 100px;
+            height: 60px;
+            flex: 1;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            height: 100px;
+            box-sizing: border-box;
+            text-align: right;
+            font-size: 2.5em;
+            border: 2px solid black;
+            background-color: lightgreen;
+
+        }
+
+        input[type="button"] {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            background-color: pink;
+            cursor: pointer;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: darkkhaki;
+            margin: 0;
+        }
+       
