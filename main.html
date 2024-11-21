@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content=" width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="download.png">
+    <title>Calculator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <!--Used table to create button-->
+        <table>
+
+            <caption style="height:40px; font-size:33px"> MY CALCULATOR</caption>
+            <tr>
+                <td colspan="4"><input type="text" id="display" name="display" readonly></td>
+            </tr>
+            <tr style="border:double">
+                <td><input type="button" value="." onclick="appendToDisplay('.')" /></td>
+                <td><input type="button" value="*" onclick="appendToDisplay('*')" /></td>
+                <td><input type="button" value="+" onclick="appendToDisplay('+')" /></td>
+                <td><input type="button" value="-" onclick="appendToDisplay('-')" /></td>
+            </tr>
+
+            <tr style="border:double">
+                <td><input type="button" value="7" onclick="appendToDisplay('7')" /></td>
+                <td><input type="button" value="8" onclick="appendToDisplay('8')" /></td>
+                <td><input type="button" value="9" onclick="appendToDisplay('9')" /></td>
+                <td><input type="button" value="/" onclick="appendToDisplay('/')" /></td>
+            </tr>
+
+            <tr style="border:double">
+                <td><input type="button" value="4" onclick="appendToDisplay('4')" /></td>
+                <td><input type="button" value="5" onclick="appendToDisplay('5')" /></td>
+                <td><input type="button" value="6" onclick="appendToDisplay('6')" /></td>
+                <td><input type="button" value="^2" onclick="square()" /></td>
+            </tr>
+
+            <tr style="border:double">
+                <td><input type="button" value="1" onclick="appendToDisplay('1')" /></td>
+                <td><input type="button" value="2" onclick="appendToDisplay('2')" /></td>
+                <td><input type="button" value="3" onclick="appendToDisplay('3')" /></td>
+                <td><input type="button" value="%" onclick="appendToDisplay('%')" /></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="0" onclick="appendToDisplay('0')" /></td>
+                <td><input type="button" value="C" onclick="clearLastEntry()" /></td>
+                <td class="allclear"><input type="button" value="AC" onclick="clearDisplay()" /></td>
+                <td><input type="button" value="=" onclick="calculate()" /></td>
+            </tr>
+
+        </table>
+    </div>
+<script src="javascript.js"></script>   
+</body>
+</html>
+
+
